@@ -32,4 +32,8 @@ export class AppComponent {
     alert(this.inputText);
   }
 
+  public handleClear() {
+    this.inputText = null;
+  }
+
 }
