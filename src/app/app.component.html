@@ -6,7 +6,7 @@
 
     <p> 
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Input:" [(value)]="inputText" >
+        <input matInput placeholder="Input:" name="inputText" [(ngModel)]="inputText" >
       </mat-form-field>
     </p>
     
@@ -31,8 +31,8 @@
     </p>
 
     <p>
-        <button mat-raised-button color="primary" [disabled]=(!inputText) (click)="handleClear()">Clear Input Message</button>
-     </p>
+      <button mat-raised-button color="primary" [disabled]=(!inputText) (click)="handleClear()">Clear Input Message</button>
+    </p>
   
     </form>
 

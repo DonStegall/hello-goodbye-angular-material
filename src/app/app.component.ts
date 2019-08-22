@@ -12,6 +12,20 @@ export class AppComponent {
 
   private inputText: string = null;
 
+  public emptyText(): boolean {
+    console.log('***' + this.inputText + '***');
+
+    if (this.inputText === null) {
+      return true;
+    }
+
+    if (this.inputText === '') {
+      return true;
+    }
+
+    return false;
+  }
+
   public handleHello() {
     this.inputText = 'Hello';
   }
